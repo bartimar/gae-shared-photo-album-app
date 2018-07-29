@@ -1,11 +1,11 @@
 substitutions:
-    _THUMBNAIL_BUCKET: my-bucket-thumbnails     # default value
+    _THUMBNAILS_BUCKET: my-bucket-thumbnails     # default value
     _PHOTO_BUCKET: my-photo-bucket              # default value
 steps:
 - name: 'ubuntu'
   args: ['bash', './build.sh']
   env:
-  - 'THUMBNAIL_BUCKET=${_THUMBNAIL_BUCKET}'
+  - 'THUMBNAILS_BUCKET=${_THUMBNAILS_BUCKET}'
   - 'PHOTO_BUCKET=${_PHOTO_BUCKET}'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy', 'app.yaml', '--project', '$PROJECT_ID']

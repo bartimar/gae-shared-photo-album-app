@@ -34,7 +34,7 @@ import googleapiclient.discovery
 
 # Constants. Note: Change THUMBNAIL_BUCKET and PHOTO_BUCKET to
 # be applicable to your project.
-THUMBNAIL_BUCKET = '__THUMBNAIL_BUCKET'
+THUMBNAIL_BUCKET = '__THUMBNAILS_BUCKET'
 PHOTO_BUCKET = '__PHOTO_BUCKET'
 NUM_NOTIFICATIONS_TO_DISPLAY = 50
 MAX_LABELS = 5
