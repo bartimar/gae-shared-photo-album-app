@@ -52,3 +52,8 @@ gsutil notification create -f json gs://$PHOTO_BUCKET
 ```
 gsutil cp test/stockholm.jpg gs://$PHOTO_BUCKET
 ```
+
+# check the web app gallery for the VisionAPI tags
+```
+gcloud app browse --project=$PROJECT_ID
+```
